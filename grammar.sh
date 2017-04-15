@@ -78,7 +78,19 @@ function print()
     printf "%-10s %-8s %-4.2f\n" "郭芙" "女" 47.9876 
 }
 
+function experience()
+{
+    ####################### usage ""x
+    if [ X"$x" = X"0" ]
+    then
+        echo 'str eq with 0'
+    else
+        echo 'str not eq with 0'
+    fi
+}
+
 #value
 #print
-flow
+#flow
+experience
 

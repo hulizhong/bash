@@ -89,8 +89,36 @@ function experience()
     fi
 }
 
+########测试$* $@的使用方法，一种是加双引号、一种是不加。
+#function showDollarVar()
+showDollarVar()
+{
+    echo '-------------$*'
+    for arg in $*
+    do
+        echo $arg
+    done
+    echo '-------------"$*"'
+    for arg in "$*"
+    do
+        echo $arg
+    done
+
+    echo '-------------$@'
+    for arg in $@
+    do
+        echo $arg
+    done
+    echo '-------------"$@"'
+    for arg in "$@"
+    do
+        echo $arg
+    done
+}
+showDollarVar "hua jiang hu" zhi
+
 #value
 #print
 #flow
-experience
+#experience
 
